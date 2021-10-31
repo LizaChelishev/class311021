@@ -6,12 +6,13 @@ def is_prime(a):
     return True
 
 
-
 _lst3 = [1, 2, 5, 8, 17, 19, 29]
 _primes = []
 for _number in _lst3:
-    _its_a_prime_number = is_prime(_number)
-    if _its_a_prime_number:
-        _primes.append(_its_a_prime_number)
-print([is_prime(_number)])
+    #_its_a_prime_number = is_prime(_number)
+    #_primes.append(_its_a_prime_number)
+    _primes.append(is_prime(_number))
+print([ is_prime(_number) for _number in _lst3 ])
+print([ (_number, is_prime(_number)) for _number in _lst3 ])
+
 
